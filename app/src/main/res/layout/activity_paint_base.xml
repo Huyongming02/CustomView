@@ -21,13 +21,9 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btn_paint_base"
+            <com.hym.customview.paintbase.PaintBaseView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="Paint基础"
-                android:textAllCaps="false" />
-
+                android:layout_height="1500dp" />
 
         </LinearLayout>
     </ScrollView>

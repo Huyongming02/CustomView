@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CustomView</string>
     <string name="main_page_title">主页</string>
+    <string name="paint_base_title">Paint基础</string>
 </resources>
