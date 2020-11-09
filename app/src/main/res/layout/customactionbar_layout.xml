@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hym.customview.widget.CustomActionBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customactionbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_actionbar_height">
+
+        <ImageView
+            android:id="@+id/iv_customactionbar_back"
+            android:layout_width="@dimen/custom_actionbar_menu_width"
+            android:layout_height="@dimen/custom_actionbar_height"
+            android:background="@drawable/selector_customactionbar"
+            android:paddingRight="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_custonactionbar_back" />
+
+        <TextView
+            android:id="@+id/tv_customactionbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/custom_actionbar_title_size" />
+
+        <FrameLayout
+            android:id="@+id/fl_customactionbar_right_group"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</com.hym.customview.widget.CustomActionBar>

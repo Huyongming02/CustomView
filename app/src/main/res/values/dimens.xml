@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_actionbar_height">48dp</dimen>
+    <dimen name="custom_actionbar_menu_width">48dp</dimen>
+    <dimen name="custom_actionbar_title_size">16sp</dimen>
+    <dimen name="custom_actionbar_menu_title_size">14sp</dimen>
+</resources>
