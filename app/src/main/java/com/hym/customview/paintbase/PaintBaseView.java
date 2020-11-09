@@ -22,7 +22,6 @@ import androidx.annotation.Nullable;
  */
 public class PaintBaseView extends View {
 
-    private Paint mPaint;
 
     public PaintBaseView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
@@ -33,10 +32,9 @@ public class PaintBaseView extends View {
 //        Paint.setTextSize( float textSize)设置文字大小
 //        Paint.setAntiAlias( boolean aa)设置抗锯齿开关
 //        Paint.setStrokeCap(Cap cap)设置笔触形状
-//        Paint.setStrokeJoin(Paint.Join join)设置转角样式
+//        Paint.setStrokeJoin(Paint.Join join)设置转角形状
 
-
-        mPaint = new Paint();
+        Paint mPaint = new Paint();
     }
 
     @Override
@@ -46,34 +44,121 @@ public class PaintBaseView extends View {
         /**
          * 设置颜色
          */
-        mPaint.setColor(Color.RED);
-        canvas.drawCircle(width / 4, radius * 2, radius, mPaint);
+        testSetColor(canvas, width, radius);
 
         /**
          * 设置抗锯齿开关
          */
-        canvas.translate(0, radius * 3);
-        //没有设置抗锯齿
-        canvas.drawCircle(width / 4, radius * 2, radius, mPaint);
-        //设置了抗锯齿
-        mPaint.setAntiAlias(true);
-        canvas.drawCircle(width * 2 / 4, radius * 2, radius, mPaint);
+        testSetAntiAlias(canvas, width, radius);
         /**
          * 设置绘制模式
          */
-        canvas.translate(0, radius * 3);
-        //FILL_AND_STROKE
-        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-        canvas.drawCircle(width / 4, radius * 2, radius, mPaint);
-        //STROKE
-        mPaint.setStyle(Paint.Style.STROKE);
-        canvas.drawCircle(width * 2 / 4, radius * 2, radius, mPaint);
-        //FILL
-        mPaint.setStyle(Paint.Style.FILL);
-        canvas.drawCircle(width * 3 / 4, radius * 2, radius, mPaint);
+        testSetStyle(canvas, width, radius);
         /**
          * 设置线条宽度
          */
+        testSetStrokeWidth(canvas, width, radius);
+//
+//        /**
+//         * 画线
+//         */
+//        canvas.translate(0, radius * 3);
+//        mPaint.setStrokeWidth(radius);
+//        //FILL_AND_STROKE
+//        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawLine(width / 7, radius * 2, width * 2 / 7, radius * 2, mPaint);
+//        //STROKE
+//        mPaint.setStyle(Paint.Style.STROKE);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawLine(width * 3 / 7, radius * 2, width * 4 / 7, radius * 2, mPaint);
+//        //STROKE
+//        mPaint.setStyle(Paint.Style.FILL);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawLine(width * 5 / 7, radius * 2, width * 6 / 7, radius * 2, mPaint);
+//
+//        /**
+//         * 画点
+//         */
+//        canvas.translate(0, radius * 3);
+//        mPaint.setStrokeWidth(radius);
+//        //FILL_AND_STROKE
+//        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width / 4, radius * 2, mPaint);
+//        //STROKE
+//        mPaint.setStyle(Paint.Style.STROKE);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width * 2 / 4, radius * 2, mPaint);
+//        //STROKE
+//        mPaint.setStyle(Paint.Style.FILL);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width * 3 / 4, radius * 2, mPaint);
+//        /**
+//         * 画点(StrokeCap==Paint.Cap.ROUND)
+//         */
+//        canvas.translate(0, radius + 10);
+//        mPaint.setStrokeCap(Paint.Cap.ROUND);
+//        mPaint.setStrokeWidth(radius);
+//        //FILL_AND_STROKE
+//        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width / 4, radius * 2, mPaint);
+//        //STROKE
+//        mPaint.setStyle(Paint.Style.STROKE);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width * 2 / 4, radius * 2, mPaint);
+//        //STROKE
+//        mPaint.setStyle(Paint.Style.FILL);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width * 3 / 4, radius * 2, mPaint);
+//
+//        /**
+//         * 画点(StrokeCap==Paint.Cap.BUTT)
+//         */
+//        canvas.translate(0, radius + 10);
+//        mPaint.setStrokeCap(Paint.Cap.BUTT);
+//        mPaint.setStrokeWidth(radius);
+//        //FILL_AND_STROKE
+//        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width / 4, radius * 2, mPaint);
+//        //STROKE
+//        mPaint.setStyle(Paint.Style.STROKE);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width * 2 / 4, radius * 2, mPaint);
+//        //STROKE
+//        mPaint.setStyle(Paint.Style.FILL);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width * 3 / 4, radius * 2, mPaint);
+//
+//        /**
+//         * 画点(StrokeCap==Paint.Cap.SQUARE)
+//         */
+//        canvas.translate(0, radius + 10);
+//        mPaint.setStrokeCap(Paint.Cap.SQUARE);
+//        mPaint.setStrokeWidth(radius);
+//        //FILL_AND_STROKE
+//        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width / 4, radius * 2, mPaint);
+//        //STROKE
+//        mPaint.setStyle(Paint.Style.STROKE);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width * 2 / 4, radius * 2, mPaint);
+//        //STROKE
+//        mPaint.setStyle(Paint.Style.FILL);
+//        mPaint.setColor(Color.RED);
+//        canvas.drawPoint(width * 3 / 4, radius * 2, mPaint);
+    }
+
+    private void testSetStrokeWidth(Canvas canvas, int width, int radius) {
+        /**
+         * 设置线条宽度
+         */
+        Paint mPaint = new Paint();
+        mPaint.setColor(Color.RED);
+        mPaint.setAntiAlias(true);
         canvas.translate(0, radius * 3);
         mPaint.setStrokeWidth(radius / 2);
         //FILL_AND_STROKE
@@ -106,101 +191,38 @@ public class PaintBaseView extends View {
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setColor(Color.parseColor("#0000FF"));
         canvas.drawCircle(width / 2, radius * 2, radius / 2, mPaint);
+    }
 
-        /**
-         *
-         */
-
-        /**
-         * 画线
-         */
+    private void testSetStyle(Canvas canvas, int width, int radius) {
+        Paint mPaint = new Paint();
+        mPaint.setColor(Color.RED);
+        mPaint.setAntiAlias(true);
         canvas.translate(0, radius * 3);
-        mPaint.setStrokeWidth(radius);
         //FILL_AND_STROKE
         mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-        mPaint.setColor(Color.RED);
-        canvas.drawLine(width / 7, radius * 2, width * 2 / 7, radius * 2, mPaint);
+        canvas.drawCircle(width / 4, radius * 2, radius, mPaint);
         //STROKE
         mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setColor(Color.RED);
-        canvas.drawLine(width * 3 / 7, radius * 2, width * 4 / 7, radius * 2, mPaint);
-        //STROKE
+        canvas.drawCircle(width * 2 / 4, radius * 2, radius, mPaint);
+        //FILL
         mPaint.setStyle(Paint.Style.FILL);
-        mPaint.setColor(Color.RED);
-        canvas.drawLine(width * 5 / 7, radius * 2, width * 6 / 7, radius * 2, mPaint);
+        canvas.drawCircle(width * 3 / 4, radius * 2, radius, mPaint);
+    }
 
-        /**
-         * 画点
-         */
+    private void testSetAntiAlias(Canvas canvas, int width, int radius) {
+        Paint mPaint = new Paint();
+        mPaint.setColor(Color.RED);
         canvas.translate(0, radius * 3);
-        mPaint.setStrokeWidth(radius);
-        //FILL_AND_STROKE
-        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-        mPaint.setColor(Color.RED);
-        canvas.drawPoint(width / 4, radius * 2, mPaint);
-        //STROKE
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setColor(Color.RED);
-        canvas.drawPoint(width * 2 / 4, radius * 2, mPaint);
-        //STROKE
-        mPaint.setStyle(Paint.Style.FILL);
-        mPaint.setColor(Color.RED);
-        canvas.drawPoint(width * 3 / 4, radius * 2, mPaint);
-        /**
-         * 画点(StrokeCap==Paint.Cap.ROUND)
-         */
-        canvas.translate(0, radius + 10);
-        mPaint.setStrokeCap(Paint.Cap.ROUND);
-        mPaint.setStrokeWidth(radius);
-        //FILL_AND_STROKE
-        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-        mPaint.setColor(Color.RED);
-        canvas.drawPoint(width / 4, radius * 2, mPaint);
-        //STROKE
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setColor(Color.RED);
-        canvas.drawPoint(width * 2 / 4, radius * 2, mPaint);
-        //STROKE
-        mPaint.setStyle(Paint.Style.FILL);
-        mPaint.setColor(Color.RED);
-        canvas.drawPoint(width * 3 / 4, radius * 2, mPaint);
+        //没有设置抗锯齿
+        canvas.drawCircle(width / 4, radius * 2, radius, mPaint);
+        //设置了抗锯齿
+        mPaint.setAntiAlias(true);
+        canvas.drawCircle(width * 2 / 4, radius * 2, radius, mPaint);
+    }
 
-        /**
-         * 画点(StrokeCap==Paint.Cap.BUTT)
-         */
-        canvas.translate(0, radius + 10);
-        mPaint.setStrokeCap(Paint.Cap.BUTT);
-        mPaint.setStrokeWidth(radius);
-        //FILL_AND_STROKE
-        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+    private void testSetColor(Canvas canvas, int width, int radius) {
+        Paint mPaint = new Paint();
         mPaint.setColor(Color.RED);
-        canvas.drawPoint(width / 4, radius * 2, mPaint);
-        //STROKE
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setColor(Color.RED);
-        canvas.drawPoint(width * 2 / 4, radius * 2, mPaint);
-        //STROKE
-        mPaint.setStyle(Paint.Style.FILL);
-        mPaint.setColor(Color.RED);
-        canvas.drawPoint(width * 3 / 4, radius * 2, mPaint);
-
-        /**
-         * 画点(StrokeCap==Paint.Cap.SQUARE)
-         */
-        canvas.translate(0, radius + 10);
-        mPaint.setStrokeCap(Paint.Cap.SQUARE);
-        mPaint.setStrokeWidth(radius);
-        //FILL_AND_STROKE
-        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
-        mPaint.setColor(Color.RED);
-        canvas.drawPoint(width / 4, radius * 2, mPaint);
-        //STROKE
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setColor(Color.RED);
-        canvas.drawPoint(width * 2 / 4, radius * 2, mPaint);
-        //STROKE
-        mPaint.setStyle(Paint.Style.FILL);
-        mPaint.setColor(Color.RED);
-        canvas.drawPoint(width * 3 / 4, radius * 2, mPaint);
+        canvas.drawCircle(width / 4, radius * 2, radius, mPaint);
     }
 }
