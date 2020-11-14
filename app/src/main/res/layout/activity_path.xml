@@ -22,24 +22,38 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btn_paint_base"
+                android:id="@+id/btn_add_xxx"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="Paint基础"
+                android:text="addXXX"
                 android:textAllCaps="false" />
 
             <Button
-                android:id="@+id/btn_canvse_base"
+                android:id="@+id/btn_xxx_to"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="Canvas基础"
+                android:text="xxxTo"
                 android:textAllCaps="false" />
 
             <Button
-                android:id="@+id/btn_path"
+                android:id="@+id/btn_fillType"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="@string/path_page_title"
+                android:text="fillType"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_op"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Op"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_other"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/path_other_page_title"
                 android:textAllCaps="false" />
 
 

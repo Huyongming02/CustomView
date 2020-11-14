@@ -2,4 +2,11 @@
     <string name="app_name">CustomView</string>
     <string name="main_page_title">主页</string>
     <string name="paint_base_title">Paint基础</string>
+    <string name="canvas_base_title">Canvas基础学习</string>
+    <string name="path_page_title">Path学习</string>
+    <string name="path_addxxx_page_title">Path.addXXX()</string>
+    <string name="path_xxxto_page_title">Path.xxxTo()</string>
+    <string name="path_filltype_page_title">Path.SetFillType()</string>
+    <string name="path_op_page_title">Path.op()</string>
+    <string name="path_other_page_title">Path其它方法</string>
 </resources>

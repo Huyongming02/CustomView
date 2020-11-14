@@ -21,28 +21,9 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btn_paint_base"
+            <com.hym.customview.path.PathFillTypeView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="Paint基础"
-                android:textAllCaps="false" />
-
-            <Button
-                android:id="@+id/btn_canvse_base"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="Canvas基础"
-                android:textAllCaps="false" />
-
-            <Button
-                android:id="@+id/btn_path"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="@string/path_page_title"
-                android:textAllCaps="false" />
-
-
+                android:layout_height="2000dp" />
         </LinearLayout>
     </ScrollView>
 

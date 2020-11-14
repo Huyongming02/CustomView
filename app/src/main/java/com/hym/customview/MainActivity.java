@@ -20,6 +20,8 @@ public class MainActivity extends BaseActivity {
 
     private void initView() {
         findViewById(R.id.btn_paint_base).setOnClickListener(this);
+        findViewById(R.id.btn_canvse_base).setOnClickListener(this);
+        findViewById(R.id.btn_path).setOnClickListener(this);
     }
 
     @Override
@@ -28,6 +30,12 @@ public class MainActivity extends BaseActivity {
         switch (v.getId()) {
             case R.id.btn_paint_base:
                 startActivity(new Intent(mContext, PaintBaseActivity.class));
+                break;
+            case R.id.btn_canvse_base:
+                startActivity(new Intent(mContext, CanvasBaseActivity.class));
+                break;
+            case R.id.btn_path:
+                startActivity(new Intent(mContext, PathActivity.class));
                 break;
         }
     }

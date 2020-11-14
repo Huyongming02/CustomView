@@ -19,6 +19,27 @@
         <activity
             android:name=".PaintBaseActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".CanvasBaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PathActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PathAddXXXActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PathXxxToActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PathFillTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PathOpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PathOtherActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
