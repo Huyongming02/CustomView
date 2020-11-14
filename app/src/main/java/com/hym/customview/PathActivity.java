@@ -38,6 +38,7 @@ public class PathActivity extends BaseActivity {
         findViewById(R.id.btn_fillType).setOnClickListener(this);
         findViewById(R.id.btn_op).setOnClickListener(this);
         findViewById(R.id.btn_other).setOnClickListener(this);
+        findViewById(R.id.btn_matrix).setOnClickListener(this);
     }
 
     @Override
@@ -58,6 +59,9 @@ public class PathActivity extends BaseActivity {
                 break;
             case R.id.btn_other:
                 startActivity(new Intent(mContext, PathOtherActivity.class));
+                break;
+            case R.id.btn_matrix:
+                startActivity(new Intent(mContext, PathMatrixActivity.class));
                 break;
         }
     }

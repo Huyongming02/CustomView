@@ -56,6 +56,13 @@
                 android:text="@string/path_other_page_title"
                 android:textAllCaps="false" />
 
+            <Button
+                android:id="@+id/btn_matrix"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/path_matrix_page_title"
+                android:textAllCaps="false" />
+
 
         </LinearLayout>
     </ScrollView>

@@ -9,4 +9,5 @@
     <string name="path_filltype_page_title">Path.SetFillType()</string>
     <string name="path_op_page_title">Path.op()</string>
     <string name="path_other_page_title">Path其它方法</string>
+    <string name="path_matrix_page_title">path.setMaxtrix()</string>
 </resources>
