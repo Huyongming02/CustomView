@@ -10,4 +10,8 @@
     <string name="path_op_page_title">Path.op()</string>
     <string name="path_other_page_title">Path其它方法</string>
     <string name="path_matrix_page_title">path.setMaxtrix()</string>
+    <string name="paint_page_title">Paint学习</string>
+    <string name="paint_base_color">基本颜色</string>
+    <string name="paint_effect_color">Paint详解之效果</string>
+    <string name="paint_shader">paint着色器</string>
 </resources>

@@ -29,7 +29,7 @@ public class MainActivity extends BaseActivity {
         super.onClick(v);
         switch (v.getId()) {
             case R.id.btn_paint_base:
-                startActivity(new Intent(mContext, PaintBaseActivity.class));
+                startActivity(new Intent(mContext, PaintActivity.class));
                 break;
             case R.id.btn_canvse_base:
                 startActivity(new Intent(mContext, CanvasBaseActivity.class));

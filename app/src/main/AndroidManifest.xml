@@ -33,6 +33,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".PathFillTypeActivity"
+            android:hardwareAccelerated="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".PathOpActivity"
@@ -42,6 +43,17 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".PathMatrixActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaintShaderActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaintEffectActivity"
+            android:hardwareAccelerated="false"
             android:screenOrientation="portrait" />
     </application>
 

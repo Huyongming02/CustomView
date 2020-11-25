@@ -13,6 +13,7 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -43,8 +44,8 @@ public class PathFillTypeView extends View {
         int width = getMeasuredWidth();
         int radius = width / 9;
         testDrawEvenOdd(canvas, width, radius);
-        testDrawWinding(canvas, width, radius);
-        testDrawStar(canvas, width, radius * 2);
+//        testDrawWinding(canvas, width, radius);
+//        testDrawStar(canvas, width, radius * 2);
     }
 
     private void testDrawStar(Canvas canvas, int width, int radius) {
@@ -192,6 +193,7 @@ public class PathFillTypeView extends View {
         path3.addCircle(width * 2 / 9, radius, radius, Path.Direction.CW);
         path3.addCircle(width * 3 / 9, radius, radius, Path.Direction.CW);
         canvas.drawPath(path3, paint);
+
 
         Path path4 = new Path();
         path4.setFillType(Path.FillType.INVERSE_EVEN_ODD);

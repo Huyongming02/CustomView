@@ -11,4 +11,26 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <declare-styleable name="LinearShaderView">
+        <attr name="linearShaderViewTileMode" format="enum">
+            <enum name="CLAMP" value="0" />
+            <enum name="REPEAT" value="1" />
+            <enum name="MIRROR" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="BitmapShaderView">
+        <attr name="BitmapShaderViewTileMode" format="enum">
+            <enum name="CLAMP" value="0" />
+            <enum name="REPEAT" value="1" />
+            <enum name="MIRROR" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RadialGradientView">
+        <attr name="RadialGradientViewTileMode" format="enum">
+            <enum name="CLAMP" value="0" />
+            <enum name="REPEAT" value="1" />
+            <enum name="MIRROR" value="2" />
+        </attr>
+    </declare-styleable>
+
 </resources>
