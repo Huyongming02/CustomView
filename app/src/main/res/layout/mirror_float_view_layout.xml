@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="120dp"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="@dimen/mirror_float_view_left_width"
+        android:layout_height="@dimen/mirror_float_view_height"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bg_tragger_left" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="@dimen/mirror_float_view_left_width"
+        android:layout_height="@dimen/mirror_float_view_height"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_tragger_right" />
+
+    <ImageView
+        android:id="@+id/iv_mid_bg"
+        android:layout_width="@dimen/mirror_float_view_height"
+        android:layout_height="@dimen/mirror_float_view_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_mid_big" />
+
+    <ImageView
+        android:id="@+id/iv_mid"
+        android:layout_width="@dimen/mirror_float_view_mid_size"
+        android:layout_height="@dimen/mirror_float_view_mid_size"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/ic_main_mirror_mode" />
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="@dimen/mirror_float_view_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/mirror_float_view_text_margin_end"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/mirror_float_view_text_line_spacing_extra"
+        android:text="@string/dragged_view_mirror_mode"
+        android:textColor="@color/home_title_color1"
+        android:textSize="@dimen/mirror_float_view_text_size" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="@dimen/mirror_float_view_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/mirror_float_view_text_margin_end"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/mirror_float_view_text_line_spacing_extra"
+        android:text="@string/dragged_view_mirror_mode"
+        android:textColor="@color/home_title_color1"
+        android:textSize="@dimen/mirror_float_view_text_size" />
+
+    <View
+        android:id="@+id/divider_right"
+        android:layout_width="@dimen/mirror_float_view_stroke_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/mirror_float_view_stroke_width"
+        android:layout_marginBottom="@dimen/mirror_float_view_stroke_width"
+        android:background="@color/mirror_float_view_solid" />
+
+    <View
+        android:id="@+id/divider_left"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/mirror_float_view_stroke_width"
+        android:layout_marginBottom="@dimen/mirror_float_view_stroke_width"
+        android:background="@color/mirror_float_view_solid" />
+</RelativeLayout>

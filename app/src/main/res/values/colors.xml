@@ -5,4 +5,8 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="custionactionbar_bg_press">#3080E0</color>
+
+    <color name="mirror_float_view_stroke_color">#33404364</color>
+    <color name="mirror_float_view_solid">@android:color/white</color>
+    <color name="home_title_color1">#333333</color>
 </resources>

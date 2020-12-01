@@ -14,4 +14,12 @@
     <string name="paint_base_color">基本颜色</string>
     <string name="paint_effect_color">Paint详解之效果</string>
     <string name="paint_shader">paint着色器</string>
+    <string name="float_view_title">悬浮窗</string>
+    <string name="float_view2_title">悬浮窗2</string>
+
+    <string name="dragged_view_mirror_mode">镜面\n模式</string>
+    <string name="float_window_permission_apply_title">悬浮窗权限</string>
+    <string name="float_window_permission_apply_message">您的手机没有授予悬浮窗权限，请开启后再试</string>
+    <string name="float_window_permission_goto_set">现在去开启</string>
+    <string name="float_window_permission_cancel">暂不开启</string>
 </resources>

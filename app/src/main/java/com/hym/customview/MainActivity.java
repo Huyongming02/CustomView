@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.hym.customview.floatview.FloatViewActivity;
 import com.hym.customview.paintbase.PaintBaseView;
 
 public class MainActivity extends BaseActivity {
@@ -22,6 +23,7 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.btn_paint_base).setOnClickListener(this);
         findViewById(R.id.btn_canvse_base).setOnClickListener(this);
         findViewById(R.id.btn_path).setOnClickListener(this);
+        findViewById(R.id.btn_float_view).setOnClickListener(this);
     }
 
     @Override
@@ -36,6 +38,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.btn_path:
                 startActivity(new Intent(mContext, PathActivity.class));
+                break;
+            case R.id.btn_float_view:
+                startActivity(new Intent(mContext, FloatViewActivity.class));
                 break;
         }
     }

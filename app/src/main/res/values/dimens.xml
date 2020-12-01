@@ -4,4 +4,14 @@
     <dimen name="custom_actionbar_menu_width">48dp</dimen>
     <dimen name="custom_actionbar_title_size">16sp</dimen>
     <dimen name="custom_actionbar_menu_title_size">14sp</dimen>
+
+    <dimen name="mirror_float_view_left_width">90dp</dimen>
+    <dimen name="mirror_float_view_height">60dp</dimen>
+    <dimen name="mirror_float_view_mid_size">39dp</dimen>
+    <dimen name="mirror_float_view_text_width">29dp</dimen>
+    <dimen name="mirror_float_view_text_size">14dp</dimen>
+    <dimen name="mirror_float_view_text_margin_end">9dp</dimen>
+    <dimen name="mirror_float_view_stroke_width">1dp</dimen>
+    <dimen name="mirror_float_view_radius">55dp</dimen>
+    <dimen name="mirror_float_view_text_line_spacing_extra">2dp</dimen>
 </resources>

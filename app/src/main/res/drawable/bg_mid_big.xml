@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/mirror_float_view_solid" />
+    <stroke
+        android:width="@dimen/mirror_float_view_stroke_width"
+        android:color="@color/mirror_float_view_stroke_color" />
+</shape>
